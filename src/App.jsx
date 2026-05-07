@@ -12,8 +12,11 @@ function App() {
   )
 }
 function Person() {
+  const age = 17;
+  const name = 'munna';
   return (
-   <p>i am a person</p>
+    <p>i am a person : {name} {age}
+    </p>
   )
 }
 export default App
