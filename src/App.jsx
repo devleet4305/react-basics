@@ -1,6 +1,5 @@
 import './App.css'
 
-
 function App() {
   return (
     <>
@@ -8,15 +7,36 @@ function App() {
       <Person></Person>
       <Person></Person>
       <Person></Person>
+      <Developer name="munna"></Developer>
+      <Developer name ="tahajib"></Developer>
+      <Developer></Developer>
     </>
   )
 }
+
+function Developer(props) {
+  console.log(props);
+  return (
+    <>
+      <h3>Developer</h3>
+      <p>Technology</p>
+    </>
+  )
+}
+
 function Person() {
   const age = 17;
   const name = 'munna';
+  const personStyle = {
+    color: 'purple',
+    border: '1px solid purple',
+    borderRadius: '8px',
+    padding: '12px'
+  };
+
   return (
-    <p>i am a person : {name} {age}
-    </p>
+    <p style={personStyle}>i am a person : {name} {age}</p>
   )
 }
+
 export default App
