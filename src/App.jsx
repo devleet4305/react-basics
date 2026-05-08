@@ -1,18 +1,18 @@
 import './App.css'
-import ToDo from './Todo.jsx'
+import Todo from './Todo.jsx'
 
 function App() {
   return (
     <>
       <h1>vite+ react</h1>
-      <ToDo></ToDo>
-      <Person></Person>
+      <Todo task="Learn React" />
+      {/* <Person></Person>
       <Person></Person>
       <Person></Person>
       <Developer name="munna"></Developer>
       <Developer name ="tahajib"></Developer>
       <Developer name="rahim"></Developer>
-      <Salami event= "eid"></Salami>
+      <Salami event= "eid"></Salami> */}
     </>
   )
 }
