@@ -1,16 +1,28 @@
 import './App.css'
+import ToDo from './Todo.jsx'
 
 function App() {
   return (
     <>
       <h1>vite+ react</h1>
+      <ToDo></ToDo>
       <Person></Person>
       <Person></Person>
       <Person></Person>
       <Developer name="munna"></Developer>
       <Developer name ="tahajib"></Developer>
-      <Developer></Developer>
+      <Developer name="rahim"></Developer>
+      <Salami event= "eid"></Salami>
     </>
+  )
+}
+
+function Salami(props) {
+  return (
+    <div className='student'>
+      <p>Salami For: {props.event}</p>
+      <p>Amount</p>
+    </div>
   )
 }
 
@@ -18,7 +30,7 @@ function Developer(props) {
   console.log(props);
   return (
     <>
-      <h3>Developer</h3>
+      <h3>Developer: {props.name}</h3>
       <p>Technology</p>
     </>
   )
